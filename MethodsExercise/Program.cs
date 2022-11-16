@@ -3,11 +3,9 @@
 namespace MethodsExercise
 {
     public class Program
-    { 
-        static void Main(string[] args)
+    {
+        public static void StoryTime()
         {
-            Console.WriteLine("Hello, World!");
-
             Console.WriteLine("What is your name?");
             string Name = Console.ReadLine();
 
@@ -21,7 +19,13 @@ namespace MethodsExercise
             string FavoriteBand = Console.ReadLine();
 
             Console.WriteLine($"{Name} had a dream that a {FavoriteColor} {FavoriteAnimal} was performing with {FavoriteBand} at Coachella.");
+        }
 
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+
+            StoryTime();
         }
     }
 }
