@@ -23,8 +23,8 @@ namespace MethodsExercise
         }
         public static int Add (params int[] numbers)
         {
-            var sum = 0;
-            foreach (var number in numbers)
+            int sum = 0;
+            foreach (int number in numbers)
             {
                 sum += number;
             }
@@ -69,7 +69,7 @@ namespace MethodsExercise
             }
             else
             {
-                Console.WriteLine($"You answered {AddAnswer}, and the correct answer was {Add(1, 1, 3, 5, 5, 8)}.");
+                Console.WriteLine($"You answered {AddAnswer}, and the correct answer was {Add(109, 3, 8, 78)}.");
             }
 
             Console.WriteLine("What is 32 - 8?");
