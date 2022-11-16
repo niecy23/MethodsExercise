@@ -20,7 +20,7 @@ namespace MethodsExercise
             Console.WriteLine("What is your favorite band?");
             string FavoriteBand = Console.ReadLine();
 
-            Console.WriteLine($"{Name} had a dream that a {FavoriteColor} {FavoriteAnimal} was playing {FavoriteBand} at Coachella.");
+            Console.WriteLine($"{Name} had a dream that a {FavoriteColor} {FavoriteAnimal} was performing with {FavoriteBand} at Coachella.");
 
         }
     }
