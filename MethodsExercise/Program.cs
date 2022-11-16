@@ -21,10 +21,16 @@ namespace MethodsExercise
 
             Console.WriteLine($"Thank you for that information, {Name}! I heard that you had a dream that a {FavoriteColor} {FavoriteAnimal} was performing with {FavoriteBand} at Coachella. Oh, not you? It must have been a different {Name}.");
         }
-        public static int Add (int num1, int num2)
+        public static int Add (params int[] numbers)
         {
-            return num1 + num2;
+            var sum = 0;
+            foreach (var number in numbers)
+            {
+                sum += number;
+            }
+            return sum;
         }
+
 
         public static int Subtract(int num1, int num2)
         {
@@ -54,16 +60,16 @@ namespace MethodsExercise
 
             Console.WriteLine("However, now that we have gotten to know each other a little bit, let's test your math skills.");
 
-            Console.WriteLine("What is 109 + 78?");
+            Console.WriteLine("What is 109 + 3 + 8 + 78?");
             int AddAnswer = int.Parse(Console.ReadLine());
 
-            if (AddAnswer == 187)
+            if (AddAnswer == 198)
             {
                 Console.WriteLine("Correct!");
             }
             else
             {
-                Console.WriteLine($"You answered {AddAnswer}, and the correct answer was {Add(109, 78)}.");
+                Console.WriteLine($"You answered {AddAnswer}, and the correct answer was {Add(1, 1, 3, 5, 5, 8)}.");
             }
 
             Console.WriteLine("What is 32 - 8?");
